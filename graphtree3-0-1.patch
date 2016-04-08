@@ -800,10 +800,10 @@ diff -x graphtree -Naru ./graphtree.right.php graphtree/graphtree.right.php
 +                    SELECT DISTINCT
 +                      g.*
 +                    FROM
-+                      `graphs` g,
-+                      `graphs_items` gi,
-+                      `items` i,
-+                      `hosts` h
++                      graphs g,
++                      graphs_items gi,
++                      items i,
++                      hosts h
 +                    WHERE i.hostid = {$hostid}
 +                      AND gi.graphid = g.graphid
 +                      AND i.itemid = gi.itemid
@@ -813,7 +813,7 @@ diff -x graphtree -Naru ./graphtree.right.php graphtree/graphtree.right.php
 +                      (SELECT
 +                        NULL
 +                      FROM
-+                        `items` i
++                        items i
 +                      WHERE h.hostid = i.hostid
 +                        AND i.status = 0
 +                        AND i.flags IN (0, 4))
@@ -831,11 +831,11 @@ diff -x graphtree -Naru ./graphtree.right.php graphtree/graphtree.right.php
 +                      g.graphid,g.graphtype
 +                    FROM
 +                      items_applications ia,
-+                      `graphs_items` gi,
-+                      `graphs` g
++                      graphs_items gi,
++                      graphs g
 +                    WHERE ia.applicationid = {$applicationid}
-+                      AND gi.`itemid` = ia.`itemid`
-+                      AND g.`graphid` = gi.`graphid`
++                      AND gi.itemid = ia.itemid
++                      AND g.graphid = gi.graphid
 +                      AND g.flags IN ('0', '4')
 +                    ORDER BY g.name";
 +
@@ -851,8 +851,8 @@ diff -x graphtree -Naru ./graphtree.right.php graphtree/graphtree.right.php
 +                    SELECT
 +                      i.itemid,i.name,i.value_type
 +                    FROM
-+                      `items` i,
-+                      `items_applications` ia
++                      items i,
++                      items_applications ia
 +                    WHERE i.itemid = ia.itemid
 +                      AND ia.applicationid = {$applicationid}
 +                      AND i.state = 0
@@ -861,13 +861,13 @@ diff -x graphtree -Naru ./graphtree.right.php graphtree/graphtree.right.php
 +                      (SELECT
 +                        NULL
 +                      FROM
-+                        `items_applications` ia,
-+                        `graphs_items` gi,
-+                        `graphs` g
++                        items_applications ia,
++                        graphs_items gi,
++                        graphs g
 +                      WHERE ia.applicationid = {$applicationid}
-+                        AND gi.`itemid` = i.`itemid`
-+                        AND g.`graphid` = gi.`graphid`
-+                        AND g.`flags` IN ('0', '4'))
++                        AND gi.itemid = i.itemid
++                        AND g.graphid = gi.graphid
++                        AND g.flags IN ('0', '4'))
 +                    ";
 +
 +        $dbRes = DBselect($sql);
