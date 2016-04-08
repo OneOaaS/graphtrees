@@ -1015,7 +1015,7 @@ diff -x graphtree -Naru ./graphtree.right.php graphtree/graphtree.right.php
 +     <img src='img/oneoaas-wechat.jpg'></br></div>";
 +echo "编辑";
 +echo dirname(__FILE__);
-+echo "graphtree/graphtree.right.php 344-350行删除此提示信息";
++echo "/graphtree.right.php 344-350行删除此提示信息";
 +$chartsWidget->show();
 +
 +require_once dirname(__FILE__) . '/include/page_footer.php';
