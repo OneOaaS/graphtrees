@@ -21,3 +21,6 @@ cp -r /tmp/zbx/zabbix-3.0.1/frontends/php /usr/share/zabbix
 cp /usr/share/zabbix-old/conf/zabbix.conf.php /usr/share/zabbix/conf/
 
 ```
+
+#实现效果
+http://t.cn/RqAeAxT
