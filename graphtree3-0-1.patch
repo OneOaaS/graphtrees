@@ -787,6 +787,7 @@ diff -x graphtree -Naru ./graphtree.right.php graphtree/graphtree.right.php
 +                      WHERE h.hostid = i.hostid
 +                        AND i.status = 0
 +                        AND i.flags IN (0, 4))
++                     GROUP BY g.graphid,g.graphtype
 +                    ORDER BY g.name ";
 +
 +        $dbRes = DBselect($sql);
@@ -837,6 +838,7 @@ diff -x graphtree -Naru ./graphtree.right.php graphtree/graphtree.right.php
 +                      AND gi.itemid = ia.itemid
 +                      AND g.graphid = gi.graphid
 +                      AND g.flags IN ('0', '4')
++                     GROUP BY g.graphid,g.graphtype
 +                    ORDER BY g.name";
 +
 +        $dbRes = DBselect($sql);
