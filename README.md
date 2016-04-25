@@ -1,7 +1,7 @@
 # graphtrees
 功能
 ```
-一，集中展示所有分组设备
+一、集中展示所有分组设备
 二、集中展示一个分组图像
 三、集中展示一个设备图像
 四、展示设备下的Application
@@ -19,6 +19,8 @@ cd 您的Zabbix-WEB目录
 wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree3-0-1.patch
 yum install -y patch
 patch  -Np0 <graphtree3-0-1.patch
+
+或者下载web下的所有文件替换您的Zabbbix-WEB目录下的所有文件，修改配置即可
 ```
 #官方RPM包安装的如下
 ```
