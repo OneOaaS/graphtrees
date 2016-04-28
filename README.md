@@ -1,5 +1,5 @@
 # graphtrees
-功能
+###功能
 ```
 一、集中展示所有分组设备
 二、集中展示一个分组图像
@@ -15,8 +15,8 @@
     2. 系统默认无graph的；
     3. 日志类的
 ```
-zabbix版本要求 3.0.1
-#安装
+##zabbix版本要求 3.0.1
+###安装
 ```
 cd 您的Zabbix-WEB目录
 wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree3-0-1.patch
