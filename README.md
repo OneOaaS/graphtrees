@@ -15,7 +15,7 @@
     2. 系统默认无graph的；
     3. 日志类的
 ```
-##zabbix版本要求 3.0.1
+##zabbix版本要求 3.0.1/3.0.2/3.0.3
 ###安装
 ```
 cd 您的Zabbix-WEB目录
@@ -37,7 +37,7 @@ yum install -y patch
 patch  -Np0 <graphtree3-0-1.patch
 cp -r /tmp/zbx/zabbix-3.0.1/frontends/php /usr/share/zabbix
 cp /usr/share/zabbix-old/conf/zabbix.conf.php /usr/share/zabbix/conf/
-
+如果是3.0.2/3.0.3 使用同样方法即可
 ```
 
 #实现效果
