@@ -893,8 +893,8 @@ diff -x graphtree -Naru ./graphtree.right.php graphtree/graphtree.right.php
 +            unset($item);
 +        }
 +    }
-+
-+    $pagingLine = getPagingLine($graph_list, ZBX_SORT_UP);
++    $url = new CUrl();
++    $pagingLine = getPagingLine($graph_list, ZBX_SORT_UP, $url);
 +    DBend(true);
 +}
 +
