@@ -247,9 +247,9 @@ if ($groupid > 0 || $hostid > 0 || $applicationid > 0) {
             unset($item);
         }
     }
-
-    $pagingLine = getPagingLine($graph_list, ZBX_SORT_UP);
-    DBend(true);
+    $url = new CUrl();
+    $pagingLine = getPagingLine($graph_list, ZBX_SORT_UP,$url);
+    //DBend(true);
 }
 
 /*
