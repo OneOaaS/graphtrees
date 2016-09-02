@@ -64,3 +64,13 @@ chown -R ${WEB_USER} oneoaas
 
 #screenshot
 http://t.cn/RqAeAxT
+
+小额捐款
+==================================
+
+
+如果你觉得graphtree插件对你有帮助, 可以对作者进行小额捐款
+
+![image](https://github.com/OneOaaS/graphtrees/master/image/wx.jpg) ![image](https://github.com/OneOaaS/graphtrees/master/image/zfb.jpg)
+
+
