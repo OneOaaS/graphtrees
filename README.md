@@ -41,7 +41,7 @@ Note:
 #How to Install:
 
 cd /usr/share/zabbix
-ZBXVERSION=3-0-4
+ZBXVERSION=3.0.4
 #we will be update it sometimes.
 wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree${ZBXVERSION}.patch
 yum install -y patch
