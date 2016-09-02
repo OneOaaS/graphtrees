@@ -39,7 +39,20 @@ Note:
 ```
 
 #How to Install:
+1.if you have not installed zabbix web
+```
+wget http://sourceforge.net/projects/zabbix/files/ZABBIX%20Latest%20Stable/3.0.4/zabbix-3.0.4.tar.gz
+tar xf zabbix-3.0.4.tar.gz
+cd frontends/php
+ZBXVERSION=3.0.4
+wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree${ZBXVERSION}.patch
+#yum install -y patch
+patch  -Np0 <graphtree${ZBXVERSION}.patch
+```
 
+
+2.If you have already installed zabbix web RPM repo
+```
 cd /usr/share/zabbix
 ZBXVERSION=3.0.4
 #Update it sometimes.
