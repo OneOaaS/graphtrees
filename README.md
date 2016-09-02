@@ -36,7 +36,6 @@ Note:
 ```
 ##zabbix version  3.0.4
 ###安装
-```
 
 #How to Install:
 1.if you have not installed zabbix web
