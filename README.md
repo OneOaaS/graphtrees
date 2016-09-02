@@ -48,6 +48,7 @@ ZBXVERSION=3.0.4
 wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree${ZBXVERSION}.patch
 #yum install -y patch
 patch  -Np0 <graphtree${ZBXVERSION}.patch
+chown -R ${WEB_USER} oneoaas
 ```
 
 
@@ -59,6 +60,7 @@ ZBXVERSION=3.0.4
 wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree${ZBXVERSION}.patch
 yum install -y patch
 patch  -Np0 <graphtree${ZBXVERSION}.patch
+chown -R ${WEB_USER} oneoaas
 ```
 
 #screenshot
