@@ -15,30 +15,38 @@
     2. 系统默认无graph的；
     3. 日志类的
 ```
-##zabbix版本要求 3.0.1/3.0.2/3.0.3
+
+
+```
+Function:
+Display all monitor things in one page.
+1.All group graph 
+2.One Application graph 
+3.One group graph
+4.One host graph
+5.All Application one host
+6.All Application log text 
+7.draw graph if no exist graph in host if item type is Numeric 
+Note:
+   click group and host,display graph in host graph
+   click Application,dispaly 3 type:
+   1.default graph
+   2.not exist graph is item type is Numeric
+   4.item tpye is Character\Log\Text
+```
+##zabbix version  3.0.4
 ###安装
 ```
-cd 您的Zabbix-WEB目录
-wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree3-0-1.patch
-yum install -y patch
-patch  -Np0 <graphtree3-0-1.patch
 
-或者下载web下的所有文件替换您的Zabbbix-WEB目录下的所有文件，修改配置即可
-```
-#官方RPM包安装的如下
-```
-mkdir  /tmp/zbx
-mv  /usr/share/zabbix /usr/share/zabbix-old
-wget http://sourceforge.net/projects/zabbix/files/ZABBIX%20Latest%20Stable/3.0.1/zabbix-3.0.1.tar.gz
-tar xf zabbix-3.0.1.tar.gz
-cd zabbix-3.0.1/frontends/php
-wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree3-0-1.patch
-yum install -y patch
-patch  -Np0 <graphtree3-0-1.patch
-cp -r /tmp/zbx/zabbix-3.0.1/frontends/php /usr/share/zabbix
-cp /usr/share/zabbix-old/conf/zabbix.conf.php /usr/share/zabbix/conf/
-如果是3.0.2/3.0.3 使用同样方法即可
-```
+#How to Install:
 
-#实现效果
+cd /usr/share/zabbix
+ZBXVERSION=3-0-4
+#we will be update it sometimes.
+wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree${ZBXVERSION}.patch
+yum install -y patch
+patch  -Np0 <graphtree${ZBXVERSION}.patch
+
+
+#screenshot
 http://t.cn/RqAeAxT
