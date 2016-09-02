@@ -29,9 +29,9 @@ Display all monitor things in one page.
 7.draw graph if no exist graph in host if item type is Numeric 
 Note:
    click group and host,display graph in host graph
-   click Application,dispaly 3 type:
+   click Application,dispaly 3 types:
    1.default graph
-   2.not exist graph is item type is Numeric
+   2.Draw graph for not exist graph(item type is Numeric)
    4.item tpye is Character\Log\Text
 ```
 ##zabbix version  3.0.4
@@ -42,7 +42,7 @@ Note:
 
 cd /usr/share/zabbix
 ZBXVERSION=3.0.4
-#we will be update it sometimes.
+#Update it sometimes.
 wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree${ZBXVERSION}.patch
 yum install -y patch
 patch  -Np0 <graphtree${ZBXVERSION}.patch
