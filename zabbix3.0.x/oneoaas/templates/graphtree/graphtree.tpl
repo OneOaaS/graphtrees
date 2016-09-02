@@ -73,7 +73,7 @@
                 <p>运维解决方案咨询</p>
                 <p>运维产品咨询</p>
                 <p><a href="http://www.oneoaas.com">www.oneoaas.com</a></p>
-                <p>请联系 suppert#oneoaas.com (#替换为@)</p>
+                <p>请联系 support#oneoaas.com (#替换为@)</p>
             </li>
             <li>
                 <p><a href="http://weibo.com/itnihao">@itnihao</a></p>
