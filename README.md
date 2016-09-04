@@ -19,6 +19,7 @@
 
 ```
 Function:
+Zabbix graph tree  
 Display all monitor things in one page.
 1.All group graph 
 2.One Application graph 
