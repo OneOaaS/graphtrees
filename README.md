@@ -35,7 +35,7 @@ Note:
    2.Draw graph for not exist graph(item type is Numeric)
    4.item tpye is Character\Log\Text
 ```
-##zabbix version  3.0.4
+##zabbix web version  >=3.0.0
 ###安装
 
 #How to Install:
@@ -49,8 +49,10 @@ wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree${ZBXV
 #yum install -y patch
 patch  -Np0 <graphtree${ZBXVERSION}.patch
 chown -R ${WEB_USER} oneoaas
+cd ../
+mv php /usr/share/zabbix (Web root should be /usr/share/zabbix)
+#注意此处的权限，必须和nginx或者apache的用户一致，如用的是apache，则此处为chown -R apache:apache oneoaas/
 ```
-
 
 2.If you have already installed zabbix web RPM repo
 ```
@@ -61,6 +63,7 @@ wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree${ZBXV
 yum install -y patch
 patch  -Np0 <graphtree${ZBXVERSION}.patch
 chown -R ${WEB_USER} oneoaas
+#注意此处的权限，必须和nginx或者apache的用户一致，如用的是apache，则此处为chown -R apache:apache oneoaas/
 ```
 
 #screenshot
