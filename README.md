@@ -65,11 +65,10 @@ chown -R ${WEB_USER} oneoaas
 #screenshot
 http://t.cn/RqAeAxT
 
-小额捐款
+项目捐款
 ==================================
-
-
-如果你觉得graphtree插件对你有帮助, 可以对作者进行小额捐款
+如果你觉得本项目促进了您的生产力,欢迎对作者打赏,以资支持【让作者有更多动力去开发下个版本】  
+打赏金额任意(注意:不接受大于500的高额赞赏)  
 
 ![image](https://github.com/OneOaaS/graphtrees/blob/master/image/wx.jpg) ![image](https://github.com/OneOaaS/graphtrees/blob/master/image/zfb.jpg)
 
