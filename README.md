@@ -67,8 +67,8 @@ chown -R ${WEB_USER} oneoaas
 ```
 
 #screenshot
-http://t.cn/RqAeAxT
-
+http://t.cn/RqAeAxT 
+http://t.cn/RcwoOGf 
 项目捐款
 ==================================
 如果你觉得本项目促进了您的生产力,欢迎对作者打赏,以资支持【让作者有更多动力去开发下个版本】  
