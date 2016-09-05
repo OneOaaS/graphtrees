@@ -66,9 +66,6 @@ chown -R ${WEB_USER} oneoaas
 #注意此处的权限，必须和nginx或者apache的用户一致，如用的是apache，则此处为chown -R apache:apache oneoaas/
 ```
 
-3.issue
-
-Apache不支持http://x.x.x.x/zabbix/index.php 方式访问.需调整为http://x.x.x.x/index.php访问
 
 #screenshot
 http://t.cn/RqAeAxT 
