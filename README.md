@@ -19,6 +19,7 @@
 
 ```
 Function:
+Zabbix graph tree  
 Display all monitor things in one page.
 1.All group graph 
 2.One Application graph 
@@ -34,7 +35,7 @@ Note:
    2.Draw graph for not exist graph(item type is Numeric)
    4.item tpye is Character\Log\Text
 ```
-##zabbix version  3.0.4
+##zabbix web version  >=3.0.0
 ###安装
 
 #How to Install:
@@ -48,8 +49,10 @@ wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree${ZBXV
 #yum install -y patch
 patch  -Np0 <graphtree${ZBXVERSION}.patch
 chown -R ${WEB_USER} oneoaas
+cd ../
+mv php /usr/share/zabbix (Web root should be /usr/share/zabbix)
+#注意此处的权限，必须和nginx或者apache的用户一致，如用的是apache，则此处为chown -R apache:apache oneoaas/
 ```
-
 
 2.If you have already installed zabbix web RPM repo
 ```
@@ -60,16 +63,20 @@ wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree${ZBXV
 yum install -y patch
 patch  -Np0 <graphtree${ZBXVERSION}.patch
 chown -R ${WEB_USER} oneoaas
+#注意此处的权限，必须和nginx或者apache的用户一致，如用的是apache，则此处为chown -R apache:apache oneoaas/
 ```
 
+3.issue
+
+Apache不支持http://x.x.x.x/zabbix/index.php 方式访问.需调整为http://x.x.x.x/index.php访问
+
 #screenshot
-http://t.cn/RqAeAxT
-
-小额捐款
+http://t.cn/RqAeAxT 
+http://t.cn/RcwoOGf 
+项目捐款
 ==================================
-
-
-如果你觉得graphtree插件对你有帮助, 可以对作者进行小额捐款
+如果你觉得本项目促进了您的生产力,欢迎对作者打赏,以资支持【让作者有更多动力去开发下个版本】  
+打赏金额任意(注意:不接受大于500的高额赞赏)  
 
 ![image](https://github.com/OneOaaS/graphtrees/blob/master/image/wx.jpg) ![image](https://github.com/OneOaaS/graphtrees/blob/master/image/zfb.jpg)
 
