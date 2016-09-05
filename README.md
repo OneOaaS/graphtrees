@@ -66,6 +66,12 @@ chown -R ${WEB_USER} oneoaas
 #注意此处的权限，必须和nginx或者apache的用户一致，如用的是apache，则此处为chown -R apache:apache oneoaas/
 ```
 
+3.Apache Issue		 +
+```		
+#vim /etc/httpd/conf.d/zabbix.conf		
+Alias /oneoaas /usr/share/zabbix/oneoaas		
+Alias /zabbix /user/share/zabbix		
+```
 
 #screenshot
 http://t.cn/RqAeAxT 
