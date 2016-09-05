@@ -68,13 +68,8 @@ chown -R ${WEB_USER} oneoaas
 
 3.issue
 
-Web use http://x.x.x.x/oneoaas/ URL.
-Apache
-```
-#vim /etc/httpd/conf.d/zabbix.conf
-Alias /oneoaas /usr/share/zabbix/oneoaas
-Alias /zabbix /user/share/zabbix
-```
+Apache不支持http://x.x.x.x/zabbix/index.php 方式访问.需调整为http://x.x.x.x/index.php访问
+
 #screenshot
 http://t.cn/RqAeAxT 
 http://t.cn/RcwoOGf 
