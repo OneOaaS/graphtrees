@@ -37,6 +37,7 @@ Note:
 ```
 ##zabbix web version  >=3.0.0
 ###安装
+######注意：如果你用过3.0.1的patch，需要重新下载zabbix的源码包，请用第一种方法安装
 
 #How to Install:
 1.if you have not installed zabbix web
@@ -54,7 +55,7 @@ mv php /usr/share/zabbix (Web root should be /usr/share/zabbix)
 #注意此处的权限，必须和nginx或者apache的用户一致，如用的是apache，则此处为chown -R apache:apache oneoaas/
 ```
 
-2.If you have already installed zabbix web RPM repo
+2.If you have already installed zabbix web RPM repo  #从未使用过3.0.1的patch
 ```
 cd /usr/share/zabbix
 ZBXVERSION=3.0.4
