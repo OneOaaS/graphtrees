@@ -1,4 +1,5 @@
 # graphtrees
+# 此功能后续将转移到新项目 https://github.com/OneOaaS/monitor_ce
 ###功能
 ```
 一、集中展示所有分组设备
