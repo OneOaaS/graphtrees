@@ -58,10 +58,9 @@ mv php /usr/share/zabbix (Web root should be /usr/share/zabbix)
 
 2.If you have already installed zabbix web RPM repo  #从未使用过3.0.1的patch
 ```
+#说明，本项目支持3.0.4以上的ZabbixWEB版本
 cd /usr/share/zabbix
-ZBXVERSION=3.0.4
-#Update it sometimes.
-wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree${ZBXVERSION}.patch
+wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree3.0.4.patch
 yum install -y patch
 patch  -Np0 <graphtree${ZBXVERSION}.patch
 chown -R ${WEB_USER} oneoaas
