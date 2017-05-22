@@ -36,20 +36,20 @@ Note:
    2.Draw graph for not exist graph(item type is Numeric)
    4.item tpye is Character\Log\Text
 ```
-##zabbix web version  >=3.0.0
-###安装
-######注意：如果你用过3.0.1的patch，需要重新下载zabbix的源码包，请用第一种方法安装
+## zabbix web version  >=3.0.0  
+### 安装   
+###### 注意：如果你用过3.0.1的patch，需要重新下载zabbix的源码包，请用第一种方法安装  
 
 #How to Install:
 1.if you have not installed zabbix web
 ```
+#说明，本项目支持3.0.4以上的ZabbixWEB版本
 wget http://sourceforge.net/projects/zabbix/files/ZABBIX%20Latest%20Stable/3.0.4/zabbix-3.0.4.tar.gz
 tar xf zabbix-3.0.4.tar.gz
 cd frontends/php
-ZBXVERSION=3.0.4
-wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree${ZBXVERSION}.patch
+wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree3.0.4.patch
 #yum install -y patch
-patch  -Np0 <graphtree${ZBXVERSION}.patch
+patch  -Np0 <graphtree3.0.4.patch
 chown -R ${WEB_USER} oneoaas
 cd ../
 mv php /usr/share/zabbix (Web root should be /usr/share/zabbix)
@@ -62,7 +62,7 @@ mv php /usr/share/zabbix (Web root should be /usr/share/zabbix)
 cd /usr/share/zabbix
 wget https://raw.githubusercontent.com/OneOaaS/graphtrees/master/graphtree3.0.4.patch
 yum install -y patch
-patch  -Np0 <graphtree${ZBXVERSION}.patch
+patch  -Np0 <graphtree3.0.4.patch
 chown -R ${WEB_USER} oneoaas
 #注意此处的权限，必须和nginx或者apache的用户一致，如用的是apache，则此处为chown -R apache:apache oneoaas/
 ```
