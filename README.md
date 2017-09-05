@@ -1,5 +1,5 @@
 # graphtrees
-# 此功能后续将转移到新项目 https://github.com/OneOaaS/monitor_ce
+# 最新版集成到OneOaaS Monitor中，下载地址http://www.oneoaas.com/download   
 ###功能
 ```
 一、集中展示所有分组设备
